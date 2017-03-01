@@ -1,8 +1,8 @@
 # spark-scheduler
-Librabry to schedule spark jobs related to time interval, We just start this project as open source our main goal for this library to support the schdeuling of spark jobs and many for components we can add please share your idea.
+* Librabry to schedule spark jobs related to time interval, We just start this project as open source our main goal for this library to support the schdeuling of spark jobs and many for components we can add please share your idea.
 
-For now we provide the Scheduler object which have api schedule(spark_job,initialDelay,timeInterval) to schedule the spark jobs. for example
-
+* For now we provide the Scheduler object which have api schedule(spark_job,initialDelay,timeInterval) to schedule the spark jobs. for example
+```
 package org.phalodi.examples
 
 import org.apache.spark.sql.SparkSession
@@ -15,5 +15,5 @@ object SparkScheduler extends App {
 
   Scheduler.schedule(rdd.count(),0,10)
 }
-
+```
 
